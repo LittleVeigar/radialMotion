@@ -1,0 +1,49 @@
+/*
+Error: Invalid CSS after "div ": expected selector, was "{"
+        on line 1 of radialMotion.sass
+
+1: div {
+2: 銆€銆€銆€銆€hi {
+3: 銆€銆€銆€銆€銆€銆€color:red;
+4: 銆€銆€銆€銆€}
+5: 銆€銆€}
+
+Backtrace:
+radialMotion.sass:1
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/scss/parser.rb:1179:in `expected'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/scss/parser.rb:1115:in `expected'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/scss/static_parser.rb:21:in `parse_selector'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:425:in `visit_rule'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/stack.rb:79:in `block in with_base'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/stack.rb:115:in `with_frame'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/stack.rb:79:in `with_base'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:158:in `visit'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/base.rb:52:in `map'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:157:in `visit'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:8:in `visit'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/engine.rb:295:in `render_with_sourcemap'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/exec/sass_scss.rb:412:in `run'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/exec/sass_scss.rb:63:in `process_result'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/exec/base.rb:52:in `parse'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/exec/base.rb:19:in `parse!'
+E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/bin/sass:13:in `<top (required)>'
+E:/work/ruby/Ruby23-x64/bin/sass:23:in `load'
+E:/work/ruby/Ruby23-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"div \": expected selector, was \"{\"\A         on line 1 of radialMotion.sass\A \A 1: div {\A 2: 銆€銆€銆€銆€hi {\A 3: 銆€銆€銆€銆€銆€銆€color:red;\A 4: 銆€銆€銆€銆€}\A 5: 銆€銆€}"; }
