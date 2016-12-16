@@ -1,49 +1,100 @@
-/*
-Error: Invalid CSS after "div ": expected selector, was "{"
-        on line 1 of radialMotion.sass
+/* line 1, ../sass/radialMotion.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
 
-1: div {
-2: 銆€銆€銆€銆€hi {
-3: 銆€銆€銆€銆€銆€銆€color:red;
-4: 銆€銆€銆€銆€}
-5: 銆€銆€}
+/* line 5, ../sass/radialMotion.scss */
+body {
+  background-color: #292a38;
+  font-family: "Microsoft Yahei";
+}
 
-Backtrace:
-radialMotion.sass:1
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/scss/parser.rb:1179:in `expected'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/scss/parser.rb:1115:in `expected'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/scss/static_parser.rb:21:in `parse_selector'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:425:in `visit_rule'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/stack.rb:79:in `block in with_base'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/stack.rb:115:in `with_frame'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/stack.rb:79:in `with_base'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:158:in `visit'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/base.rb:52:in `map'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:157:in `visit'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/visitors/perform.rb:8:in `visit'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/root_node.rb:36:in `css_tree'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/engine.rb:295:in `render_with_sourcemap'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/exec/sass_scss.rb:412:in `run'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/exec/sass_scss.rb:63:in `process_result'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/exec/base.rb:52:in `parse'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/lib/sass/exec/base.rb:19:in `parse!'
-E:/work/ruby/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-4.0.0.alpha.1/bin/sass:13:in `<top (required)>'
-E:/work/ruby/Ruby23-x64/bin/sass:23:in `load'
-E:/work/ruby/Ruby23-x64/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"div \": expected selector, was \"{\"\A         on line 1 of radialMotion.sass\A \A 1: div {\A 2: 銆€銆€銆€銆€hi {\A 3: 銆€銆€銆€銆€銆€銆€color:red;\A 4: 銆€銆€銆€銆€}\A 5: 銆€銆€}"; }
+/* line 9, ../sass/radialMotion.scss */
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 14, ../sass/radialMotion.scss */
+.nav-wrap {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  border: 2px dotted #4e5061;
+  border-radius: 50%;
+}
+/* line 21, ../sass/radialMotion.scss */
+.main-nav {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  text-shadow: 1px 1px 0px #000;
+  background: #15a5f3;
+  cursor: pointer;
+}
+/* line 41, ../sass/radialMotion.scss */
+nav {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+}
+/* line 57, ../sass/radialMotion.scss */
+nav a {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #f44283;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: 1px 1px 0px #000;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 79, ../sass/radialMotion.scss */
+.nav-wrap.active nav {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+}

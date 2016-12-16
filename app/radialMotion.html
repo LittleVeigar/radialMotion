@@ -1,68 +1,68 @@
 <!DOCTYPE html>
  <html>
  <head>
- 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
- 	<title>css3 径向运动</title>
- 	<link rel="stylesheet" href="../dist/css/radialMotion.css" >
- 	<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>css3 径向运动</title>
+  <link rel="stylesheet" href="radialMotion.css" >
+  <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
   </head>
  <body>
- 	<h1>径向运动演示效果</h1>
-	<div class="nav-wrap">
-		<nav >
-			<a >1</a>
-			<a >2</a>
-			<a >3</a>
-			<a >4</a>
-			<a >5</a>
-			<a >6</a>
-			<a >7</a>
-			<a >8</a>
-		</nav>
-		<div class="main-nav">点我</div>
-	</div>
-	<script type="text/javascript">
-		var isLocated = false;
-		$('.nav-wrap').on('click','.main-nav',function(e){
-			e.preventDefault();
-			var me = $(this),
-			navWrap = me.closest('.nav-wrap'), // 动画效果的父容器
-			navs = navWrap.find('nav a'); // 父容器中的所有子菜单
-			// 当菜单没被激活时
-			if(!navWrap.hasClass('active') && !isLocated){
-				// 圆的半径 raduis
-				var width = navWrap.width(),
-				radius = width / 2;
+  <h1>径向运动演示效果</h1>
+  <div class="nav-wrap">
+    <nav >
+      <a >1</a>
+      <a >2</a>
+      <a >3</a>
+      <a >4</a>
+      <a >5</a>
+      <a >6</a>
+      <a >7</a>
+      <a >8</a>
+    </nav>
+    <div class="main-nav">点我</div>
+  </div>
+  <script type="text/javascript">
+    var isLocated = false;
+    $('.nav-wrap').on('click','.main-nav',function(e){
+      e.preventDefault();
+      var me = $(this),
+      navWrap = me.closest('.nav-wrap'), // 动画效果的父容器
+      navs = navWrap.find('nav a'); // 父容器中的所有子菜单
+      // 当菜单没被激活时
+      if(!navWrap.hasClass('active') && !isLocated){
+        // 圆的半径 raduis
+        var width = navWrap.width(),
+        radius = width / 2;
 
-				// 圆形菜单的起始、终止角度
-				var startAngle = 0,
-				endAngle = 360;
-				// 两个子菜单间的夹角 gap
-				var total = navs.length,
-				gap = (endAngle - startAngle)/total;
-				// 角度->弧度
-				var radian = Math.PI / 180;
-				/*
-				* 计算并确定各个子菜单的最终位置
-				*/
-				$.each(navs, function(index, item){
-					// 当前子菜单与x轴正向的夹角 θ （角度->弧度）
-					var myAngle = (startAngle + gap*index) * radian;  // θ
+        // 圆形菜单的起始、终止角度
+        var startAngle = 0,
+        endAngle = 360;
+        // 两个子菜单间的夹角 gap
+        var total = navs.length,
+        gap = (endAngle - startAngle)/total;
+        // 角度->弧度
+        var radian = Math.PI / 180;
+        /*
+        * 计算并确定各个子菜单的最终位置
+        */
+        $.each(navs, function(index, item){
+          // 当前子菜单与x轴正向的夹角 θ （角度->弧度）
+          var myAngle = (startAngle + gap*index) * radian;  // θ
 
-					// 计算当前子菜单相对于左上角(0,0)的坐标 (x,y)
-					var myX = radius + radius * Math.cos( myAngle ), // x=r+rcos(θ)
-						  myY = radius + radius * Math.sin( myAngle ); // y=r+rsin(θ)
-					// 设置当前子菜单的位置 (left,top) = (x,y)
-					$(this).css({
-						left: myX + 'px',
-						top: myY + 'px'
-					});
-				});
-				isLocated = true;
-			}
-			navWrap.toggleClass('active');
-		});
- 	</script>
+          // 计算当前子菜单相对于左上角(0,0)的坐标 (x,y)
+          var myX = radius + radius * Math.cos( myAngle ), // x=r+rcos(θ)
+              myY = radius + radius * Math.sin( myAngle ); // y=r+rsin(θ)
+          // 设置当前子菜单的位置 (left,top) = (x,y)
+          $(this).css({
+            left: myX + 'px',
+            top: myY + 'px'
+          });
+        });
+        isLocated = true;
+      }
+      navWrap.toggleClass('active');
+    });
+  </script>
  </body>
- </html> 
+ </html>
